@@ -1,10 +1,11 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Page from '@/components/Nav/Nav';
+
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main>
-      
-          </main>
-  )
+      <Page />
+    </main>
+  );
 }
