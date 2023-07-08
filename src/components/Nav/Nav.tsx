@@ -2,16 +2,34 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import HamburgerIcon from './HamburgerIcon';
 import Logo from './Logo';
-import {Navbar, NavLeft, NavRight, Icon} from './Styles/Nav.styled';
+import ResponsiveLogo from './ResponsiveLogo';
+import {
+  Navbar,
+  NavLeft,
+  NavRight,
+  Icon,
+  MobileLogo,
+  PrimaryLogo,
+  Menu,
+} from './Styles/Nav.styled';
 import {NavText} from './Styles/NavText.styled';
 
 const Nav = () => {
   return (
     <div>
       <Navbar>
+        <Menu>
+          <HamburgerIcon/>
+        </Menu>
         <NavLeft>
-          <Logo />
+          <PrimaryLogo>
+            <Logo />
+          </PrimaryLogo>
+          <MobileLogo>
+            <ResponsiveLogo />
+          </MobileLogo>
           <NavText>Movies</NavText>
           <NavText>TV Shows</NavText>
           <NavText>People</NavText>
