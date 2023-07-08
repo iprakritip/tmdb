@@ -2,12 +2,12 @@ import {color} from '@/utils/color';
 import styled from 'styled-components';
 
 export const Navbar = styled.div`
-  background-color: ${color.tmdbDarkBlue};
+  background-color: rgb(${color.tmdbDarkBlue});
   padding: 0.5rem 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   width: 100vw;
   @media only screen and (max-width: 600px) {
     padding:0.5rem 1.5rem;
@@ -49,7 +49,7 @@ export const NavRight = styled.div`
   align-items: center;
 `;
 export const Icon = styled.div`
-  color: ${color.tmdbLightBlue};
+  color: rgb(${color.tmdbLightBlue});
   width: 1.35rem;
   height: 1.35rem;
   cursor: pointer;

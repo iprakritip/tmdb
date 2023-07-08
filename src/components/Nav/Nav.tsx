@@ -3,8 +3,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import HamburgerIcon from './HamburgerIcon';
-import Logo from './Logo';
-import ResponsiveLogo from './ResponsiveLogo';
+import {Logo, ResponsiveLogo} from './Logo';
+
 import {
   Navbar,
   NavLeft,
@@ -13,15 +13,15 @@ import {
   MobileLogo,
   PrimaryLogo,
   Menu,
-} from './Styles/Nav.styled';
-import {NavText} from './Styles/NavText.styled';
+} from './styles/Nav.styled';
+import {NavText} from './styles/NavText.styled';
 
 const Nav = () => {
   return (
     <div>
       <Navbar>
         <Menu>
-          <HamburgerIcon/>
+          <HamburgerIcon />
         </Menu>
         <NavLeft>
           <PrimaryLogo>
