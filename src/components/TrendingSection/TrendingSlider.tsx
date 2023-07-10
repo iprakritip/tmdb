@@ -1,5 +1,6 @@
 'use client';
 
+import SectionTitle from '@/utils/SectionTitle';
 import SwitchTab from '@/utils/SwitchTab';
 import {Box, Typography} from '@mui/material';
 import React from 'react';
@@ -18,18 +19,7 @@ const TrendingSlider = () => {
         width: '100%',
       }}
     >
-      <Box
-        sx={{
-         display:'flex',
-         gap:'1rem',
-         alignItems:'center'
-        }}
-      >
-        <Typography variant='h6' component='h4'>
-          Trending Now
-        </Typography>
-        <SwitchTab />
-      </Box>
+      <SectionTitle section='Trending Now' color='#000' />
       <Box
         sx={{
           boxShadow: 0,

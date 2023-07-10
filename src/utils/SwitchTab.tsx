@@ -7,11 +7,14 @@ import {color} from './../utils/color';
 
 const SwitchTab = () => {
   const [value, setValue] = useState('today');
-  const handleChange = (e: React.SyntheticEvent) => {
-    console.log(e.target);
-    // setValue(e.target.innerText);
+  const handleChange = (e: React.SyntheticEvent, newValue: string) => {
+    console.log('Click');
+
+    // console.log(newValue);
+    // console.log(e.target);
+    setValue(newValue);
   };
-  console.log(value);
+  // console.log(value);
 
   const theme = createTheme({
     palette: {
@@ -34,7 +37,7 @@ const SwitchTab = () => {
       >
         <Tabs
           value={value}
-          onChange={(e) => handleChange(e)}
+          onChange={handleChange}
           TabIndicatorProps={{style: {display: 'none'}}}
           sx={{
             padding: 0,
