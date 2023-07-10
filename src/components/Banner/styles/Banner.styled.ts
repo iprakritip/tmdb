@@ -7,7 +7,7 @@ width:100vw;
 background-image: url('https://www.themoviedb.org/t/p/w880_and_h600_multi_faces_filter(duotone,00192f,00baff)/r2NcIZ1FPMlxCty3vRITVTgGNVS.jpg');
 background-repeat: no-repeat;
 background-size: cover;
-font-family:'Nunito Sans';
+font-family:'Roboto';
 padding: 0 1rem;
 display:flex;
 flex-direction:column;
@@ -33,5 +33,12 @@ export const SearchBar = styled.form`
     position: absolute;
     top: 0;
     right:0;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+    background-image: linear-gradient(
+    to right,
+    rgba(${color.tmdbLightGreen}, 1) 0%,
+    rgba(${color.tmdbLightBlue}, 1) 100%
+  );
   }
 `;

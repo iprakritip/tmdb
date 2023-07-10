@@ -1,7 +1,5 @@
 import React from 'react';
-import { InputElement } from './styles/Input.styles';
-
-
+import {InputElement} from './styles/Input.styled';
 
 interface InputProps extends React.ComponentPropsWithoutRef<'input'> {}
 
