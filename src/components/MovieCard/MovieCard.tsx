@@ -10,7 +10,7 @@ const MovieCard = () => {
   return (
     <Card
       sx={{
-       minWidth: '10rem',
+       minWidth: '9rem',
         height: '20rem',
         padding: 0,
         fontFamily: 'Roboto',

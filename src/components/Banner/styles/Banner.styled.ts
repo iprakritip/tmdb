@@ -8,7 +8,7 @@ background-image: url('https://www.themoviedb.org/t/p/w880_and_h600_multi_faces_
 background-repeat: no-repeat;
 background-size: cover;
 font-family:'Roboto';
-padding: 0 1rem;
+padding: 0 2.5rem;
 display:flex;
 flex-direction:column;
 gap:0.5rem;

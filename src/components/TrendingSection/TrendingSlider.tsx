@@ -8,9 +8,11 @@ const TrendingSlider = () => {
   return (
     <Box sx={{
         boxShadow: 0,
-        padding: '1rem',
-        overflow: 'hidden',
-        overflowX: 'auto',
+        padding: '0 0 0 2.5rem',
+        display:'flex',
+        marginTop:'2rem',
+        flexDirection:'column',
+        gap:'1rem',
         width: '100%',
       }}>
         <div>
