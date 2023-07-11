@@ -9,7 +9,8 @@ interface ButtonProps extends React.ComponentPropsWithoutRef<'button'> {
 
 
 const Button = ({label, ...props}: ButtonProps) => {
-  return <ButtonComponent>{label}</ButtonComponent>;
+  
+  return <ButtonComponent onClick={props.onClick}>{label}</ButtonComponent>;
 };
 
 export default Button;

@@ -6,6 +6,9 @@ import React from 'react';
 import {BannerSubText, BannerText, BannerWrapper, SearchBar} from './styles/Banner.styled';
 
 const Banner = () => {
+  const implementSearch=()=>{
+    
+  }
   return (
     <BannerWrapper>
       <div>
@@ -16,7 +19,7 @@ const Banner = () => {
       </div>
       <SearchBar>
         <Input type='text' placeholder='Search...' />
-        <Button label='Search' />
+        <Button label='Search' onClick={implementSearch} />
       </SearchBar>
     </BannerWrapper>
   );
