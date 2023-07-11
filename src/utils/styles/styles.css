@@ -1,0 +1,13 @@
+.options  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(225, 225, 225, 0.8);
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.options:hover {
+    color: rgba(1, 180, 228, 0.8);
+}
