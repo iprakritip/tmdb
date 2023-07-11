@@ -31,15 +31,23 @@ const Nav = () => {
           <MobileLogo>
             <ResponsiveLogo />
           </MobileLogo>
-          <Link href='/movies'>
+          <Link href='/movies' style={{ textDecoration: 'none' }}>
             <NavText>Movies</NavText>
           </Link>
-          <NavText>TV Shows</NavText>
-          <NavText>People</NavText>
+          <Link href='/tvshows' style={{ textDecoration: 'none' }}>
+            <NavText>TV Shows</NavText>
+          </Link>
+          <Link href='/people' style={{ textDecoration: 'none' }}>
+            <NavText>People</NavText>
+          </Link>
         </NavLeft>
         <NavRight>
-          <NavText>Login</NavText>
-          <NavText>Join TMDB</NavText>
+          <Link href='/login' style={{ textDecoration: 'none' }}>
+            <NavText>Login</NavText>
+          </Link>
+          <Link href='/signup' style={{ textDecoration: 'none' }}>
+            <NavText>Join TMDB</NavText>
+          </Link>
           <Icon>
             <svg
               xmlns='http://www.w3.org/2000/svg'
