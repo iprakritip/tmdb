@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components';
 import HamburgerIcon from './HamburgerIcon';
@@ -30,7 +31,9 @@ const Nav = () => {
           <MobileLogo>
             <ResponsiveLogo />
           </MobileLogo>
-          <NavText>Movies</NavText>
+          <Link href='/movies'>
+            <NavText>Movies</NavText>
+          </Link>
           <NavText>TV Shows</NavText>
           <NavText>People</NavText>
         </NavLeft>
