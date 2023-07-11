@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color } from "@/utils/color";
+import { color } from "./../../../utils/color";
 
 export const BannerWrapper=styled.div`
 height:45vh;

@@ -6,11 +6,19 @@ import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import Banner from '../Banner/Banner';
 
-describe('Banner',()=>{
-    const TestComponent= (<Banner/>)
+describe('Banner', () => {
+  const TestComponent = <Banner />;
+
+  it('displays banner text', () => {
     render(TestComponent);
-    
-    it('displays banner text',()=>{
-        expect(screen.getByText('Welcome')).toBeInTheDocument();
-    })
-})
+    expect(screen.getByText(/Welcome/i)).toBeInTheDocument();
+  });
+  it('renderes input', () => {
+    render(TestComponent);
+    expect(screen.getByRole('textbox')).toBeInTheDocument();
+  });
+  it('renderes search button', () => {
+    render(TestComponent);
+    expect(screen.getByRole('button')).toBeInTheDocument();
+  });
+});

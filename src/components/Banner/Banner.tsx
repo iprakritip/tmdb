@@ -1,14 +1,19 @@
 'use client';
 
-import Button from '@/utils/Button';
-import Input from '@/utils/Input';
+import Button from './../../utils/Button';
+import Input from './../../utils/Input';
 import React from 'react';
-import {BannerSubText, BannerText, BannerWrapper, SearchBar} from './styles/Banner.styled';
+import {
+  BannerSubText,
+  BannerText,
+  BannerWrapper,
+  SearchBar,
+} from './styles/Banner.styled';
 
 const Banner = () => {
-  const implementSearch=()=>{
+  const implementSearch = () => {
     //log sth
-  }
+  };
   return (
     <BannerWrapper>
       <div>
