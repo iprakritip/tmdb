@@ -7,7 +7,7 @@ import {BannerSubText, BannerText, BannerWrapper, SearchBar} from './styles/Bann
 
 const Banner = () => {
   const implementSearch=()=>{
-    
+    //log sth
   }
   return (
     <BannerWrapper>
