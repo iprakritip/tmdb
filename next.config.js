@@ -1,11 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  // experimental: {
-  //   forceSwcTransforms: true,
-  // },
-}
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
 
 module.exports = nextConfig
+// const nextConfig = {
+//   experimental: {
+//     forceSwcTransforms: true,
+//   },
+// }
+
+// module.exports = nextConfig
+
 
 // const swcCompiler = require('@swc/core');
 // const swcLoader = require('@swc/core/loader');
