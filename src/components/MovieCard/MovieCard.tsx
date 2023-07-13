@@ -5,6 +5,7 @@ import {Card} from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 import MoviePoster from './MoviePoster';
+import MovieScore from './MovieScore';
 import MovieText from './MovieText';
 
 const MovieCard = () => {
@@ -18,12 +19,16 @@ const MovieCard = () => {
         border: 0,
         borderRadius: 0,
         boxShadow: 0,
-        position:'relative'
+        position: 'relative',
+        display:'flex',
+        flexDirection:'column',
+        gap:'0.5rem'
       }}
     >
       <MoviePoster />
       <MovieText />
       <Options />
+      <MovieScore />
     </Card>
   );
 };
