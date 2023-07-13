@@ -1,7 +1,9 @@
 'use client';
 
+import Options from '@/utils/Options';
 import {Card} from '@mui/material';
 import React from 'react';
+import PlayIcon from './PlayIcon';
 import TrailerPoster from './TrailerPoster';
 import TrailerText from './TrailerText';
 
@@ -16,13 +18,16 @@ const TrailerCard = () => {
         border: 0,
         borderRadius: '10',
         boxShadow: 0,
-        display:"flex",
-        flexDirection:'column',
-        background:'rgb(225, 225, 225, 0)'
+        display: 'flex',
+        flexDirection: 'column',
+        background: 'rgb(225, 225, 225, 0)',
+        position: 'relative',
       }}
     >
       <TrailerPoster />
-      <TrailerText/>
+      <TrailerText />
+      <PlayIcon />
+      <Options />
     </Card>
   );
 };
