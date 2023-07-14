@@ -7,10 +7,14 @@ import SwitchTab from './SwitchTab';
 interface SectionTitleProps {
   section: string;
   color: string;
-  switches:string[];
+  switches?: string[];
 }
 
-const SectionTitle = ({section, color, switches}: SectionTitleProps) => {
+const SectionTitle = ({
+  section,
+  color,
+  switches,
+}: SectionTitleProps) => {
   return (
     <Box
       sx={{
@@ -22,7 +26,7 @@ const SectionTitle = ({section, color, switches}: SectionTitleProps) => {
       <Typography variant='h6' component='h4' sx={{color: color}}>
         {section}
       </Typography>
-      <SwitchTab switches={switches} />
+      {switches && <SwitchTab switches={switches} />}
     </Box>
   );
 };

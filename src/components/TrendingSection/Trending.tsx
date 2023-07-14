@@ -6,7 +6,7 @@ import {Box, Typography} from '@mui/material';
 import React from 'react';
 import MovieCard from '../MovieCard/MovieCard';
 
-const TrendingSlider = () => {
+const Trending = () => {
   return (
     <Box
       sx={{
@@ -19,7 +19,11 @@ const TrendingSlider = () => {
         width: '100%',
       }}
     >
-      <SectionTitle section='Trending Now' color='#000' switches={['Today', 'This Week', 'This Month']} />
+      <SectionTitle
+        section='Trending Now'
+        color='#000'
+        switches={['Today', 'This Week', 'This Month']}
+      />
       <Box
         sx={{
           boxShadow: 0,
@@ -67,4 +71,4 @@ const TrendingSlider = () => {
   );
 };
 
-export default TrendingSlider;
+export default Trending;
