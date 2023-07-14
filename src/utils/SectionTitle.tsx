@@ -4,12 +4,13 @@ import {Box, Typography} from '@mui/material';
 import React from 'react';
 import SwitchTab from './SwitchTab';
 
-interface SectionTitleProps{
-    section:string,
-    color:string
+interface SectionTitleProps {
+  section: string;
+  color: string;
+  switches:string[];
 }
 
-const SectionTitle = ({section, color}:SectionTitleProps) => {
+const SectionTitle = ({section, color, switches}: SectionTitleProps) => {
   return (
     <Box
       sx={{
@@ -18,10 +19,10 @@ const SectionTitle = ({section, color}:SectionTitleProps) => {
         alignItems: 'center',
       }}
     >
-      <Typography variant='h6' component='h4' sx={{color:color}}>
+      <Typography variant='h6' component='h4' sx={{color: color}}>
         {section}
       </Typography>
-      <SwitchTab />
+      <SwitchTab switches={switches} />
     </Box>
   );
 };

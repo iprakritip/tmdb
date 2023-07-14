@@ -19,7 +19,7 @@ const TrendingSlider = () => {
         width: '100%',
       }}
     >
-      <SectionTitle section='Trending Now' color='#000' />
+      <SectionTitle section='Trending Now' color='#000' switches={['Today', 'This Week', 'This Month']} />
       <Box
         sx={{
           boxShadow: 0,

@@ -5,13 +5,13 @@ import {} from '@mui/system';
 import React, {useState} from 'react';
 import {color} from './../utils/color';
 
-const SwitchTab = () => {
-  const [value, setValue] = useState('today');
-  const handleChange = (e: React.SyntheticEvent, newValue: string) => {
-    // console.log('Click');
+interface SwitchTabProps {
+  switches: string[];
+}
 
-    // console.log(newValue);
-    // console.log(e.target);
+const SwitchTab = ({switches}: SwitchTabProps) => {
+  const [value, setValue] = useState(switches[0]);
+  const handleChange = (e: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
   // console.log(value);
@@ -45,13 +45,33 @@ const SwitchTab = () => {
             minHeight: 0,
           }}
         >
-          <Tab
+          {switches.map((switchName, index) => {
+            return (
+              <Tab
+                key={index}
+                disableRipple
+                value={switchName}
+                label={switchName}
+                sx={{
+                  textTransform: 'lowercase',
+                  padding: ' 0.4rem 1rem',
+                  minWidth: 0,
+                  border: 0,
+                  borderRadius: '30px',
+                  minHeight: 0,
+                  '&.Mui-selected': {
+                    background: `rgb(${color.tmdbDarkBlue})`,
+                  },
+                }}
+              />
+            );
+          })}
+          {/* <Tab
             disableRipple
             value='today'
             label='Today'
             sx={{
               textTransform: 'lowercase',
-              //   background: `rgb(${color.tmdbDarkBlue})`,
               padding: ' 0.4rem 1rem',
               minWidth: 0,
               border: 0,
@@ -95,7 +115,7 @@ const SwitchTab = () => {
               minHeight: 0,
               //   color: `rgb(${color.tmdbDarkBlue})`,
             }}
-          />
+          /> */}
         </Tabs>
       </Box>
     </ThemeProvider>
