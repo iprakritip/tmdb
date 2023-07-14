@@ -8,7 +8,7 @@ import {color} from './../utils/color';
 const SwitchTab = () => {
   const [value, setValue] = useState('today');
   const handleChange = (e: React.SyntheticEvent, newValue: string) => {
-    console.log('Click');
+    // console.log('Click');
 
     // console.log(newValue);
     // console.log(e.target);
